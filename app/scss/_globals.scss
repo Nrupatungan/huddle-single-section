@@ -1,0 +1,138 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $Violet;
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px 10px;
+    @media #{$mq-375-up}{
+        padding: 30px 20px;
+    }
+    @media #{$mq-620-up}{
+        padding: 50px 35px;
+    }
+    @media #{$mq-1350-up}{
+        background-image: url("../images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-size:cover; 
+        padding: 10px 40px;
+    }
+}
+img{
+    width: 100%;
+}
+.huddle{
+    width: 200px;
+    margin-bottom:0;
+    @media #{$mq-375-down}{
+        width: 150px;
+    }
+    @media #{$mq-620-down}{
+        height: 150px;
+    }
+    @media #{$mq-620-up}{
+        height: 100px;
+    }
+    @media #{$mq-760-up}{
+        margin-bottom: 120px;
+    }
+    @media #{$mq-1350-up}{
+        margin-bottom: 50px;
+        height: 100px;
+    }
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media #{$mq-1350-up}{
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+    }
+
+}
+.main-img{
+    img{
+        @media #{$mq-620-up}{
+            width: 500px;
+        }
+        @media #{$mq-760-up}{
+            width: 600px;
+        }
+        @media #{$mq-1000-up}{
+            width: 100%;
+        }
+    }
+
+    @media #{$mq-375-down}{
+        margin-bottom: 20px;
+    }
+    @media #{$mq-375-up}{
+        margin-bottom: 25px;
+    }
+    @media #{$mq-620-up}{
+        margin-bottom: 80px;
+    }
+    @media #{$mq-1350-up}{
+        margin-bottom: 0;
+        flex: 1 1 300px;
+    }
+}
+.main-text{
+    @media #{$mq-1350-up}{
+        flex: 1 1 300px;
+    }
+}
+button{
+    border: none;
+    color: $Violet;
+    background-color: white;
+    padding: 10px 70px;
+    border-radius: 24px;
+    box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.2);
+    transition: all 0.15s ease;
+    cursor: pointer;
+
+    @media #{$mq-375-up} {
+        margin-top: 25px;
+        padding: 10px 90px;
+    }
+}
+button:hover{
+    color: white;
+    background-color: $SoftMagenta;
+}
+
+footer{
+    text-align: center;
+    margin: 50px;
+    i{
+        color: white;
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 10px;
+        margin-left: 15px;
+        @media #{$mq-1350-up}{
+            font-size: 20px;
+        }
+    }
+    .fa-facebook-f{
+        margin-left: 0;
+        border-radius: 50%;
+        padding: 11px 13.2px;
+    }
+    @media #{$mq-1350-up}{
+        text-align: end;
+    }
+}
+i:hover{
+    color: $SoftMagenta;
+    cursor: pointer;
+    border-color: $SoftMagenta;
+}

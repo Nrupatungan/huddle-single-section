@@ -1,0 +1,11 @@
+#node files are large, so remove it
+node_modules/
+
+#note.md is not needed
+note.md
+
+#design files are arbitrary
+design/
+
+#style guide is not needed
+style-guide.md
